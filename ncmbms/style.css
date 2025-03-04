@@ -1,0 +1,248 @@
+/* ✅ Design général */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+objective-images {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.objective-images img {
+    width: 220px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .topics {
+        flex: 1;
+    text-align: left;
+    width: 60%;
+    }
+
+    .topics-table th, .topics-table td {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px auto;
+    }}
+/* ✅ Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width:80px;
+    height: auto;
+}
+
+/* ✅ Titre avec les lettres rouges */
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+h1 span {
+    color: red;
+}
+
+/* ✅ Carrousel */
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+}
+
+.carousel-container {
+    display: flex;
+    width: 100%;
+    animation: scroll 12s linear infinite;
+}
+
+.carousel-container img {
+    width: 15%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ✅ Animation du carrousel */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* ✅ Programme & Aims */
+.programme, .aims {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.programme:hover, .aims:hover {
+    transform: scale(1.03);
+}
+
+/* ✅ Footer */
+footer {
+    background: #0056b3;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ Conteneur principal */
+.info-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    align-items: start;
+    gap: 20px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* ✅ Blocs des sections */
+.aims, .objectives, .topics, .important-dates, .committee, .organization-committee {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+/* ✅ Effet hover */
+.aims:hover, .objectives:hover, .topics:hover, .important-dates:hover, 
+.committee:hover, .organization-committee:hover {
+    transform: scale(1.03);
+    border-color: #ff4d4d;
+}
+
+/* ✅ Images entre les blocs */
+.info-img {
+    width: 120px; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* ✅ Bloc des Dates Importantes */
+.important-dates {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.important-dates ul {
+    list-style: none;
+    padding: 0;
+}
+
+.important-dates li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* ✅ Conteneur des comités */
+.committee-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* ✅ Comités en 2 colonnes */
+.committee, .organization-committee {
+    width: 48%;
+    text-align: center;
+}
+
+/* ✅ Styles pour les tableaux */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 2px solid #0056b3;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #0056b3;
+    color: white;
+    width: 20%;
+}
+
+/* ✅ Tableaux spécifiques */
+.topics-table th {
+    text-align: center;
+    width: 150%;
+}
+
+.committee-table th {
+    text-align: center;
+    width: 40%;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+    .info-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .info-img {
+        display: none;
+    }
+
+    .committee-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .committee, .organization-committee, .important-dates {
+        width: 90%;
+    }
+}
