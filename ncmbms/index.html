@@ -75,18 +75,172 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-           <<h2>Welcome <h2></h2>
-            <p>Thank you for downloading the template and the registration sheet :</p>
-            <a href="Template NCMBMS'25.docx">📄 Template</a>
-            <a href="INSCRIPTION.docx">📄 inscription sheet</a>
-            <a href="NCMBMS’25  21.pdf"> 📄 NCMBMS’25  21 </a>
- 		<a href="Poster_NCMBMS'25.pptx"> 📄 Poster_NCMBMS'25 </a>
-                 <a href="qr final.png"> 📄 dowload the program </a>
-
-            <p>Thank you !</p>
-
+        <div class="led-sign-container">
+            <div class="led-sign">
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>I</span>
+            <span>N</span>
+            <span>G</span>
+            <span style="margin-left: 16px;"></span>
+            <span>S</span>
+            <span>O</span>
+            <span>O</span>
+            <span>N</span>
+            <span style="margin-left: 16px;"></span>
+            <span>S</span>
+            <span>T</span>
+            <span>A</span>
+            <span>Y</span>
+            <span style="margin-left: 8px;"></span>
+            <span>T</span>
+            <span>U</span>
+            <span>N</span>
+            <span>E</span>
+            <span>D</span>
+            </div>
         </div>
+        <style>
+        .led-sign-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 0;
+        }
+        .led-sign {
+            background: #000;
+            padding: 24px 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 24px #00aaff, 0 0 8px #fff inset;
+            display: flex;
+            gap: 6px;
+            font-size: 2.2rem;
+            font-family: 'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+        }
+        .led-sign span {
+            color: #00aaff;
+            text-shadow:
+            0 0 8px #00aaff,
+            0 0 16px #00aaff,
+            0 0 2px #fff;
+            animation: blink 1.2s infinite alternate;
+        }
+        .led-sign span:nth-child(odd) {
+            color: #fff;
+            text-shadow:
+            0 0 8px #fff,
+            0 0 16px #00aaff,
+            0 0 2px #00aaff;
+            animation-delay: 0.2s;
+        }
+        .led-sign span:nth-child(even) {
+            animation-delay: 0.6s;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        </style>
+<section class="join-attraction-slider">
+    <h2 class="slider-title">Get Involved. Get Inspired. Make a Difference.</h2>
+    <div class="slider-container">
+        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="slider-images">
+            <!-- Example images, replace with your actual images from imgantiraction folder -->
+            <img src="imgantiraction/492689748_1237883481466192_8128783273757755931_n.jpg" alt="Attraction 1">
+            <img src="imgantiraction/494279482_1237884018132805_1524640365543499967_n.jpg" alt="Attraction 2">
+            <img src="imgantiraction/495996884_1237883688132838_5799851473436135658_n.jpg" alt="Attraction 3">
+            <img src="imgantiraction/499207310_1237883794799494_9155022272026255698_n.jpg" alt="Attraction 4">
+            <img src="imgantiraction/499577009_1237884114799462_4770416271514647705_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/499577009_1237884114799462_4770416271514647705_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/499792227_1237883528132854_8549154690464917680_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/499855422_1237883621466178_9065912718326753577_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/502572687_1237883374799536_1209588179518143521_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/502752363_1237883858132821_2352506083647067893_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/504257812_1237883728132834_5012136094338151501_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/505820292_1237884054799468_4048593724516254463_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/506101090_1237883911466149_6178342964822797175_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/506593297_1237883961466144_9208503809647776999_n.jpg" alt="Attraction 5">
+            <img src="imgantiraction/510253681_1237883421466198_2620751445644378556_n.jpg" alt="Attraction 5">
+            <!-- Add more images as needed -->
+        </div>
+        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+</section>
+<style>
+.join-attraction-slider {
+    margin: 48px auto 32px auto;
+    max-width: 900px;
+    text-align: center;
+}
+.slider-title {
+    font-size: 2.5rem;
+    color: #0077b6;
+    font-weight: bold;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #bde0fe;
+}
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.slider-btn {
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #bde0fe;
+    transition: background 0.2s;
+}
+.slider-btn:hover {
+    background: #023e8a;
+}
+.slider-images {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    max-width: 700px;
+    padding: 8px 0;
+}
+.slider-images img {
+    height: 220px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px #90e0ef;
+    object-fit: cover;
+    min-width: 320px;
+    background: #fff;
+    transition: transform 0.2s;
+}
+.slider-images img:hover {
+    transform: scale(1.04);
+}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const slider = document.querySelector('.slider-images');
+    const prevBtn = document.querySelector('.prev-btn');
+    const nextBtn = document.querySelector('.next-btn');
+    const scrollAmount = 340;
+
+    prevBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+});
+</script>
+
         <section class="important-dates">
             <h3>Important Dates</h3>
             <ul>
