@@ -76,31 +76,46 @@
             </div>
         </section>
         <div class="led-sign-container">
-            <div class="led-sign">
-            <span>C</span>
-            <span>O</span>
-            <span>M</span>
-            <span>I</span>
-            <span>N</span>
-            <span>G</span>
-            <span style="margin-left: 16px;"></span>
-            <span>S</span>
-            <span>O</span>
-            <span>O</span>
-            <span>N</span>
-            <span style="margin-left: 16px;"></span>
-            <span>S</span>
-            <span>T</span>
-            <span>A</span>
-            <span>Y</span>
-            <span style="margin-left: 8px;"></span>
-            <span>T</span>
-            <span>U</span>
-            <span>N</span>
-            <span>E</span>
-            <span>D</span>
+            <div class="led-sign" style="flex-direction: column; align-items: center;">
+                <span style="font-size: 1.2rem; color: #fff; text-shadow: none; margin-bottom: 10px;">
+                    Download NCMBMS Files
+                </span>
+                <div style="display: flex; gap: 24px;">
+                    <a href="NCMBMS’25 call for paper.pdf" download class="download-btn">
+                        <i class="fas fa-file-pdf"></i> NCMBMS’25 call for paper
+                    </a>
+                    <a href="NCMBMS’25 Proceeding.pdf" download class="download-btn">
+                        <i class="fas fa-file-pdf"></i> NCMBM’25 Proceeding
+                    </a>
+                    <a href="NCMBMS’25 Program .pdf" download class="download-btn">
+                        <i class="fas fa-file-pdf"></i> NCMBMS’25 Program
+                    </a>
+                </div>
             </div>
         </div>
+        <style>
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #00aaff;
+            color: #fff;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-family: 'Courier New', Courier, monospace;
+            text-decoration: none;
+            box-shadow: 0 2px 8px #bde0fe;
+            transition: background 0.2s, transform 0.2s;
+        }
+        .download-btn:hover {
+            background: #0077b6;
+            transform: scale(1.05);
+        }
+        .download-btn i {
+            font-size: 1.3rem;
+        }
+        </style>
         <style>
         .led-sign-container {
             display: flex;
